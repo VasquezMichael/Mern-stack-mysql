@@ -1,0 +1,30 @@
+{
+  "name": "mern-stack-mysql",
+  "version": "1.0.0",
+  "description": "Aplicacion web utilizando mysql como base de datos, express como framework de node, nodejs como plataforma para ejecutar el back end y front end con React",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VasquezMichael/Mern-stack-mysql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VasquezMichael/Mern-stack-mysql/issues"
+  },
+  "homepage": "https://github.com/VasquezMichael/Mern-stack-mysql#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
