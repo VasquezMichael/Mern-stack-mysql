@@ -6,7 +6,7 @@ router.get("/ping", async (req, res) => {
   const [rows] = await pool.query("SELECT 1 + 1 AS RESULT");
 
   console.log(rows);
-
+  console.log("2");
   res.json(rows);
 });
 
