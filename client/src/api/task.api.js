@@ -19,3 +19,7 @@ export const getTaskRequest = async (id) => {
 export const updateTaskRequest = async (id, fields) => {
   return await axios.put(`http://localhost:4000/tasks/${id}`, fields);
 };
+
+export const toggleTaskDoneRequest = async (id, done) => {
+  return await axios.put(`http://localhost:4000/tasks/${id}`, { done });
+};
