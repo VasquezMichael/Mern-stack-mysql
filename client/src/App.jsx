@@ -9,15 +9,19 @@ import { TaskContextProvider } from "./context/TaskContext";
 
 const App = () => {
   return (
-    <TaskContextProvider>
+    <div className="bg-zinc-900 h-screen">
       <NavBar />
-      <Routes>
-        <Route path="/" element={<TaskPage />}></Route>
-        <Route path="/new" element={<TaskForm />}></Route>
-        <Route path="/edit/:id" element={<TaskForm />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
-    </TaskContextProvider>
+      <div className="container mx-auto p-10">
+        <TaskContextProvider>
+          <Routes>
+            <Route path="/" element={<TaskPage />}></Route>
+            <Route path="/new" element={<TaskForm />}></Route>
+            <Route path="/edit/:id" element={<TaskForm />}></Route>
+            <Route path="*" element={<NotFound />}></Route>
+          </Routes>
+        </TaskContextProvider>
+      </div>
+    </div>
   );
 };
 

@@ -18,8 +18,10 @@ const Taskpage = () => {
 
   return (
     <div>
-      <h1>List Task</h1>
-      {renderMain()}
+      <h1 className="text-4xl text-white font-bold text-center py-5">
+        List Task
+      </h1>
+      <div className="grid grid-cols-3 gap-2 px-10">{renderMain()}</div>
     </div>
   );
 };
